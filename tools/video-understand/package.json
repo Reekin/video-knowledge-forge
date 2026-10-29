@@ -1,0 +1,27 @@
+{
+  "name": "video-understand-daemon-tool",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "video-understand-daemon": "./src/cli.mjs"
+  },
+  "scripts": {
+    "start": "node ./src/cli.mjs",
+    "server": "node ./src/server.mjs",
+    "status": "node ./src/cli.mjs --status",
+    "server-status": "node ./src/cli.mjs --server-status",
+    "stop-server": "node ./src/cli.mjs --stop-server",
+    "check": "node ./src/cli.mjs --help"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mime-types": "^2.1.35"
+  },
+  "optionalDependencies": {
+    "@google-cloud/storage": "^7.17.1"
+  }
+}

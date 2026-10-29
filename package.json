@@ -1,0 +1,17 @@
+{
+  "name": "video-knowledge-forge",
+  "version": "0.1.0",
+  "description": "Turn creators' video tutorials into transcripts, comment notes and an interactive knowledge-map site.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "forge": "./forge.mjs"
+  },
+  "scripts": {
+    "postinstall": "npm install --prefix tools/video-understand --no-audit --no-fund",
+    "forge": "node forge.mjs"
+  }
+}

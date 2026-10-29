@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>知识图谱</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="#/"><span class="brand-mark"></span><span class="brand-text"></span></a>
+  <nav class="nav">
+    <a href="#/map" data-nav="map">星图</a>
+    <a href="#/chapters" data-nav="chapters">章节</a>
+    <a href="#/paths" data-nav="paths">路线</a>
+    <a href="#/models" data-nav="models">模型</a>
+    <a href="#/glossary" data-nav="glossary">术语</a>
+  </nav>
+  <button class="search-btn" id="openSearch"><span>我想……</span><kbd>Ctrl K</kbd></button>
+  <a class="progress-pill" href="#/paths" id="progressPill" title="已掌握的知识点"></a>
+</header>
+<main id="view"></main>
+<div class="palette" id="palette" hidden>
+  <div class="palette-box">
+    <input id="paletteInput" placeholder="搜知识点、术语，或者直接说你想做什么" autocomplete="off">
+    <div class="palette-list" id="paletteList"></div>
+    <div class="palette-hint"><span>↑↓ 选择</span><span>Enter 打开</span><span>Esc 关闭</span></div>
+  </div>
+</div>
+<div class="tooltip" id="tooltip" hidden></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

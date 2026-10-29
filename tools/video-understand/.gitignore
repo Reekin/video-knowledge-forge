@@ -1,0 +1,9 @@
+.env
+.env.local
+gcp-service-account.json
+gcp-service-account.local.json
+.daemon/
+.daemon-start.lock/
+node_modules/
+downloads/
+*.log
